@@ -1,0 +1,144 @@
+/* all styles of form's item components */
+// 主题色
+$hover-info: #eaeff3
+$info: #03a9f4
+$selected: #03a9f4
+
+// .multiselect
+// .multiselect:hover
+//   .multiselect__clear
+//     display: inline
+.multiselect__select
+  position: absolute
+  width: 22px
+  right: 1px
+  top: 1px
+  padding: 4px 0
+  text-align: center
+  transition: transform .2s ease
+  &:hover + .multiselect__clear
+      display: inline-block
+.multiselect-label
+  float: left
+
+.multiselect-subtext
+  float: right
+  color: rgb(132, 146, 166)
+  font-size: 13px
+
+.multiselect__spinner
+  background: #fff
+
+.multiselect__spinner:before,
+.multiselect__spinner:after
+  border-color: $hover-info trnsparent transparent
+
+.multiselect
+  min-width: 84px
+  color: rgb(53, 73, 94)
+
+.multiselect__input,
+.multiselect__single
+  background: #fff
+
+.multiselect__input:hover,
+.multiselect__single:hover
+  border-color: #cfcfcf
+
+.multiselect__input:focus,
+.multiselect__single:focus
+  border-color: #a8a8a8
+
+.multiselect__tags
+  border: 1px solid #E8E8E8
+  background: #fff
+
+.multiselect__tag
+  color: #fff
+  background: $info
+
+.multiselect__tag-icon:after
+  color: #cfcfcf
+
+.multiselect__tag-icon:focus,
+.multiselect__tag-icon:hover
+  background: $info
+
+.multiselect__tag-icon:focus:after,
+.multiselect__tag-icon:hover:after
+  // color: rgb(53, 73, 94)
+  color: #fff
+
+.multiselect__current
+  border: 1px solid #E8E8E8
+
+.multiselect__select:before
+  color: #999
+  border-color: #999999 transparent transparent transparent
+
+.multiselect__placeholder
+  color: #ADADAD
+
+.multiselect__content-wrapper
+  background: #fff
+  border: 1px solid #E8E8E8
+
+.multiselect--above .multiselect__content-wrapper
+  border-top: 1px solid #E8E8E8
+
+
+.multiselect__option--highlight
+  background: $hover-info
+  color: rgb(53, 73, 94)
+
+.multiselect__option--highlight:after
+  background: $hover-info
+  color: rgb(53, 73, 94)
+
+.multiselect__option--selected
+  background: $selected
+  color: #fff
+
+.multiselect__option--selected:after
+  color: silver
+
+.multiselect__option--selected.multiselect__option--highlight
+  background: $selected
+  color: #fff
+
+.multiselect__option--selected.multiselect__option--highlight:after
+  background: $selected
+  color: #fff
+
+.multiselect--disabled
+  background: #ededed
+
+.multiselect--disabled .multiselect__current,
+.multiselect--disabled .multiselect__select
+  background: #ededed
+  color: #a6a6a6
+
+.multiselect__option--disabled
+  background: #ededed
+  color: #a6a6a6
+
+.multiselect__option--disabled.multiselect__option--highlight
+  background: #dedede !important
+
+.multiselect__clear
+  position: absolute
+  right: 1px
+  top: 1px
+  height: 34px
+  width: 24px
+  display: block
+  cursor: pointer
+  z-index: 2
+  text-align: center
+  line-height: 34px
+  display: none
+  background: #fff
+  &:hover
+    display: block
+  .icon-close
+// 下拉框样式修改(end)

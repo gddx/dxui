@@ -20,9 +20,10 @@
 
 import lrz from 'lrz'
 import { getFileURL } from '@/utils/common'
-import upload from '@/assets/img/upload.png'
+import upload from './upload.png'
 
 export default {
+  name: 'SmartUpload',
   props: {
     fieldName: { // 后端接收的字段名. 默认是files
       type: String,

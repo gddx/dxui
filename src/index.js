@@ -6,6 +6,9 @@ import SmartDialog from '@/components/smart-dialog'
 import ImportantInfo from '@/components/important-info'
 import NewGridBox from '@/components/new-grid-box'
 import Tab from '@/components/tab'
+import SmartForm from '@/components/smart-form'
+import SmartFormItems from '@/components/smart-form/smart-form-item/index.js'
+import FilterBox from '@/components/filter-box'
 /**
  * 划重点----组件路径命名要小写，不然install的时候大小写问题会报找不到
  */
@@ -14,10 +17,12 @@ const components = {
   LoadingPage,
   ButtonList,
   SmartDialog,
-  // Filterbox,
   ImportantInfo,
   Tab,
-  NewGridBox
+  NewGridBox,
+  SmartForm,
+  ...SmartFormItems,
+  FilterBox
 }
 
 const dxui = {

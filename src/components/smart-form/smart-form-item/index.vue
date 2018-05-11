@@ -62,10 +62,10 @@
             v-else-if="column.form.type === 'time'"
             v-bind="column.form"
             v-model="currentValue")
-          SmartButton(
-            v-else-if="column.form.type === 'button'"
-            v-bind="column.form"
-            v-model="currentValue")
+          //- SmartButton(
+          //-   v-else-if="column.form.type === 'button'"
+          //-   v-bind="column.form"
+          //-   v-model="currentValue")
           SmartNumber(
             v-else-if="column.form.type === 'number'"
             v-bind="column.form"
@@ -89,26 +89,26 @@
 </template>
 
 <script>
-import SmartText from './SmartText'
-import SmartInput from './SmartInput'
-import SmartPassword from './SmartPassword'
-import SmartSelect from './SmartSelect'
-import SmartTree from './SmartTree'
-import SmartDate from './SmartDate'
-import SmartDateRange from './SmartDateRange'
-import SmartButton from '@/components/ButtonList/ButtonItem'
-import SmartTextarea from './SmartTextarea'
+import SmartText from './smart-text.vue'
+import SmartTextarea from './smart-textarea.vue'
+import SmartInput from './smart-input.vue'
+import SmartPassword from './smart-password.vue'
+import SmartSelect from './smart-select.vue'
+import SmartTree from './smart-tree.vue'
+import SmartDate from './smart-date.vue'
+import SmartDateRange from './smart-date-range.vue'
+// import SmartButton from '@/components/button-list/button-item'
 // import SmartSwitch from './SmartSwitch'
-import SmartNumber from './SmartNumber'
-import SmartNumRange from './SmartNumRange'
-import SmartCascader from './SmartCascader'
+import SmartNumber from './smart-number.vue'
+import SmartNumRange from './smart-num-range.vue'
+import SmartCascader from './smart-cascader.vue'
 // import SmartCheckbox from './SmartCheckbox'
 // import SmartDate from './SmartDate'
 // import SmartMultiselect from './SmartMultiselect'
-import SmartFormAddon from './SmartFormAddon'
-import SmartUpload from './SmartUpload'
-import SmartTime from './SmartTime'
-import SmartCheckboxGroup from './SmartCheckboxGroup'
+import SmartFormAddon from './smart-form-addon.vue'
+import SmartUpload from './smart-upload.vue'
+import SmartTime from './smart-time.vue'
+import SmartCheckboxGroup from './smart-checkbox-group.vue'
 
 export default {
   name: 'SmartFormItem',
@@ -152,7 +152,7 @@ export default {
     SmartCascader,
     SmartTime,
     SmartDateRange,
-    SmartButton,
+    // SmartButton,
     SmartUpload,
     SmartNumber,
     SmartNumRange,

@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import InfoRender from '@/components/InfoRender'
+import InfoRender from '@/components/important-info/info-render.vue'
 export default {
   name: 'SmartText',
   components: {

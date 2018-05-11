@@ -9,7 +9,7 @@
 </template>
 <script>
 import { cloneDeep } from 'lodash'
-import SmartForm from '@/components/SmartForm'
+import SmartForm from '@/components/smart-form'
 
 export default {
   name: 'FilterBox',

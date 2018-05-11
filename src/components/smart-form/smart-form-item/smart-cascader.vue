@@ -28,7 +28,7 @@ function treeValue (result, cid, options) {
 }
 
 export default {
-  name: 'SmartCascader',
+  name: 'SmarmCascader',
   props: {
     disabled: {
       type: Boolean,

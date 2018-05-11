@@ -5,6 +5,7 @@
 <script>
 /* 丰瑞啊，猛猛来做 */
 export default {
+  name: 'SmartSwitch',
   props: {
     disabled: {
       type: Boolean,

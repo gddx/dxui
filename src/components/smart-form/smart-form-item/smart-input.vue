@@ -1,15 +1,14 @@
 <template lang="pug">
   input.form-control(
-    type="password"
+    type="text"
     v-model="currentValue"
     :id="'form-'+name"
-    :disabled="disabled"
-    :placeholder="placeholder"
-    @keyup="changeValue")
+    :placeholder="placeholder")
 </template>
 
 <script>
 export default {
+  name: 'SmartInput',
   props: {
     name: String,
     disabled: {
@@ -19,16 +18,19 @@ export default {
     placeholder: {
       type: String,
       default: ''
+    },
+    value: {
+      type: String | Number
     }
   },
-  data () {
-    return {
-      currentValue: ''
-    }
-  },
-  methods: {
-    changeValue (event) {
-      this.$emit('input', event.target.value)
+  computed: {
+    currentValue: {
+      get () {
+        return this.value
+      },
+      set (val) {
+        this.$emit('input', val)
+      }
     }
   }
 }

@@ -6,7 +6,7 @@
 <script>
 
 export default {
-  name: 'checkbox',
+  name: 'SmartCheckbox',
   props: {
     disabled: {
       type: Boolean,

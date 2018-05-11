@@ -8,6 +8,7 @@
 
 <script>
 export default {
+  name: 'SmartAddon',
   props: {
     type: {
       type: String,

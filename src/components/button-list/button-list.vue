@@ -10,7 +10,7 @@
 <script>
 import ButtonItem from './button-item.vue'
 export default {
-  name: 'Buttonlist',
+  name: 'ButtonList',
   components: {
     ButtonItem
   },

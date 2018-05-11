@@ -6,65 +6,70 @@ import App from './app.vue'
 import router from './routers'
 // const dxui = require('../src/index')
 import dxui from '../src/index'
+import moment from 'moment'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './assets/scss/index.scss'
+import 'vue-multiselect/dist/vue-multiselect.min.css'
+// import 'vue-image-lightbox/dist/vue-image-lightbox.min.css'
 
 import {
   Pagination,
   Cascader,
-  // Button,
+  Button,
   DatePicker,
   TimeSelect,
   TimePicker,
   Popover,
   Tooltip,
-  // Tree,
+  Tree,
   Row,
   Col,
-  // Checkbox,
-  // Table,
-  // TableColumn,
-  // Breadcrumb,
-  // BreadcrumbItem,
+  Message,
+  Checkbox,
+  Table,
+  TableColumn,
+  Breadcrumb,
+  BreadcrumbItem,
   Tabs,
   TabPane,
-  // Steps,
-  // Step,
+  Steps,
+  Step,
   Input,
-  InputNumber
+  InputNumber,
   // Loading,
-  // CheckboxGroup
+  CheckboxGroup
 } from 'element-ui'
 // Vue.use(Loading)
 Vue.use(Input)
 Vue.use(Tabs)
 Vue.use(TabPane)
-// Vue.use(Table)
-// Vue.use(TableColumn)
+Vue.use(Table)
+Vue.use(TableColumn)
 Vue.use(Pagination)
-// Vue.use(Checkbox)
+Vue.use(Checkbox)
 Vue.use(Cascader)
-// Vue.use(Button)
+Vue.use(Button)
 Vue.use(DatePicker)
 Vue.use(TimeSelect)
 Vue.use(TimePicker)
 Vue.use(Popover)
 Vue.use(Tooltip)
-// Vue.use(Tree)
+Vue.use(Tree)
 Vue.use(Row)
 Vue.use(Col)
-// Vue.use(Breadcrumb)
-// Vue.use(BreadcrumbItem)
-// Vue.use(CheckboxGroup)
+Vue.use(Breadcrumb)
+Vue.use(BreadcrumbItem)
+Vue.use(CheckboxGroup)
 // Vue.use(Menu)
 // Vue.use(MenuItem)
-// Vue.use(Steps)
-// Vue.use(Step)
+Vue.use(Steps)
+Vue.use(Step)
 Vue.use(InputNumber)
 
 Vue.use(dxui)
-console.log(dxui)
+Vue.prototype.$message = Message
+Object.defineProperty(Vue.prototype, '$moment', { value: moment })
 // Vue.config.productionTip = false
 
 /* eslint-disable no-new */

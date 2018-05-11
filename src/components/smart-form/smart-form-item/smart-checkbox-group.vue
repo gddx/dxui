@@ -10,7 +10,7 @@
 <script>
 import { keyBy } from 'lodash'
 export default {
-  name: 'checkBox-group',
+  name: 'SmartCheckboxGroup',
   props: {
     value: {
       type: Array,

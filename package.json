@@ -1,7 +1,7 @@
 {
   "name": "dx-ui",
   "version": "1.0.2",
-  "description": "UI components Library with Vue.js By DXFE",
+  "description": "UI Components Library With Vue.js By DXFE",
   "author": "linmn <linmn@gddxit.com>",
   "keywords": [
     "dx",
@@ -30,13 +30,20 @@
   ],
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/gddx/dxui"
+  },
+  "bugs": {
+    "url": "https://github.com/gddx/dxui/issues"
+  },
+  "publishConfig": {
+    "registry": "http://192.168.0.243:8081/repository/npm-dxorg/"
   },
   "dependencies": {
     "bootstrap": "^4.1.1",
     "echarts": "^3.8.5",
     "element-ui": "^2.3.7",
     "lodash": "^4.17.5",
+    "lrz": "^4.9.40",
     "md5": "^2.2.1",
     "moment": "^2.18.1",
     "pug": "^2.0.3",
@@ -100,6 +107,7 @@
     "karma-sourcemap-loader": "^0.3.7",
     "karma-spec-reporter": "0.0.31",
     "karma-webpack": "^2.0.2",
+    "lodash": "^4.17.10",
     "mocha": "^3.2.0",
     "nightwatch": "^0.9.12",
     "node-notifier": "^5.1.2",

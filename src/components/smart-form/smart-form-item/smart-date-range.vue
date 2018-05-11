@@ -14,6 +14,7 @@
 import moment from 'moment'
 
 export default {
+  name: 'SmartDateRange',
   props: {
     name: String,
     disabled: {

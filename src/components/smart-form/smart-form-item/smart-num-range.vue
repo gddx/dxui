@@ -23,7 +23,7 @@
 
 <script>
 export default {
-  name: 'SmartNumberRange',
+  name: 'SmartNumRange',
   props: {
     name: String,
     disabled: {

@@ -12,7 +12,7 @@
 <script>
 
 export default {
-  name: 'smartTime',
+  name: 'SmartTime',
   props: {
     name: String,
     disabled: {

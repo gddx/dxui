@@ -37,7 +37,7 @@ import { filter } from 'lodash'
 import Multiselect from 'vue-multiselect'
 
 export default {
-  name: 'SmartFormSelect',
+  name: 'SmartSelect',
   components: {
     Multiselect
   },

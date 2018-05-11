@@ -34,8 +34,8 @@
 // import { cloneDeep } from 'lodash'
 import { validationMixin } from 'vuelidate'
 import { validations } from './validations'
-import SmartFormItem from './SmartFormItem'
-import ButtonList from '@/components/ButtonList'
+import SmartFormItem from './smart-form-item/index.vue'
+import ButtonList from '@/components/button-list'
 
 export default {
   mixins: [validationMixin],
